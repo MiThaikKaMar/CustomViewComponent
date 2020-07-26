@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.padcx.customviewassignment.views.viewpods.ProfileViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:paddingTop="@dimen/margin_large"
+    android:paddingBottom="@dimen/margin_large">
+    <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+        android:id="@+id/iv_profile11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photo2"
+        android:scaleType="centerCrop"
+        app:corner_radius="50dp"
+        android:layout_centerHorizontal="true"
+        app:border_width="3dp"/>
+    <TextView
+        android:id="@+id/tv_closed_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closed tasks"
+        android:textColor="#928F8F"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="361"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_below="@id/tv_closed_tasks"
+        android:paddingStart="@dimen/margin_large"/>
+    <TextView
+        android:id="@+id/tv_open_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#928F8F"
+        android:text="Open tasks"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_toEndOf="@id/iv_profile11"
+        android:layout_marginStart="@dimen/margin_xxlarge"/>
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/tv_open_tasks"
+        android:layout_toEndOf="@id/iv_profile11"
+        android:layout_marginStart="@dimen/margin_xxlarge"
+        android:paddingStart="@dimen/margin_xlarge"/>
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zachary Butler"
+        android:textColor="#000"
+        android:layout_below="@id/iv_profile11"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_marginTop="@dimen/margin_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UI Designer"
+        android:textColor="#928F8F"
+        android:layout_below="@id/tv_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"/>
+
+</com.padcmyanmar.padcx.customviewassignment.views.viewpods.ProfileViewPod>

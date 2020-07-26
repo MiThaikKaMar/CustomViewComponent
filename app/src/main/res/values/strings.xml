@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CustomViewAssignment</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="spinner">
+        <item>Awsmd Team</item>
+        <item>First Team</item>
+        <item>Last Team</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedImageCornerView">
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_width" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircularProgressBarView">
+        <attr name="setProgressColor" format="color"/>
+        <attr name="setProgressWidth" format="integer"/>
+        <attr name="setTextColor" format="color"/>
+        <attr name="showProgressText" format="boolean" />
+    </declare-styleable>
+</resources>

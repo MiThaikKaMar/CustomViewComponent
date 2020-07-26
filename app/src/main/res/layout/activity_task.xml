@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TaskActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2B2828">
+
+        <ImageView
+            android:id="@+id/iv_arrow_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_new_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@id/iv_arrow_left1"
+            android:text="A Create New Task"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="Save"
+            android:textColor="#74C477"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_new_task"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="CLIENT" />
+
+        <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+            android:id="@+id/iv_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_client"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo4"
+            app:corner_radius="25dp" />
+
+        <Spinner
+            android:id="@+id/tv_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_client"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_toEndOf="@id/iv_logo"
+            android:entries="@array/spinner" />
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="PROJECT NAME" />
+
+        <EditText
+            android:id="@+id/et_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_project_name"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="Create additional page" />
+
+        <TextView
+            android:id="@+id/tv_project_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_project_name"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="PROJECT DATE" />
+
+        <TextView
+            android:id="@+id/tv_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_project_date"
+            android:layout_marginStart="@dimen/margin_large"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="   Dec 24, 2019"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="135dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_date1"
+            android:layout_marginStart="@dimen/margin_large"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/tv_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_project_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="   Dec 30, 2019"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="135dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_date1"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/tv_dat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_project_date"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_toEndOf="@id/tv_date1"
+            android:text="---"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_assignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider3"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="ASSIGNEE" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/chain_img"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_assignee"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_profile1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo1"
+                app:corner_radius="25dp"
+                app:border_width="2dp"/>
+
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_profile3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo2"
+                app:corner_radius="25dp"
+                app:layout_anchor="@id/iv_profile1"
+                app:layout_anchorGravity="end|center"
+                app:border_width="2dp"/>
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_plus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plus"
+                app:corner_radius="25dp"
+                app:layout_anchor="@id/iv_profile3"
+                app:layout_anchorGravity="end|center"
+                app:border_width="2dp"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chain_img"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="CATEGORY" />
+
+        <Button
+            android:id="@+id/btn_design"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_category"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/rounded_button_shape2"
+            android:drawableStart="@drawable/ic_check_black_24dp"
+            android:text="Design" />
+
+        <Button
+            android:id="@+id/btn_frontend"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_category"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/rounded_button_shape3"
+            android:text="Frontend"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_backend"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_category"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/rounded_button_shape3"
+            android:text="Backend"
+            android:textColor="#000" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_design"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:background="#F5ECEC">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Description"
+                android:textColor="#000" />
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_attach1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_large"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo5"
+                app:corner_radius="20dp"
+                app:border_width="1dp"/>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_description"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_toStartOf="@id/iv_attach1"
+                android:background="#CEC4C4" />
+
+            <TextView
+                android:id="@+id/tv_attachments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider5"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="ATTACHMENTS"
+                android:textColor="#807C7C"
+                android:textSize="@dimen/text_small" />
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_logo1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_attachments"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo6"
+                app:corner_radius="25dp" />
+
+            <com.padcmyanmar.padcx.customviewassignment.views.components.RoundedImageCornerView
+                android:id="@+id/iv_logo2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_attachments"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cross"
+                app:corner_radius="25dp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv_attachments"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_toStartOf="@id/iv_logo2"
+                android:layout_toEndOf="@id/iv_logo1"
+                android:max="100"
+                android:progress="70" />
+
+            <TextView
+                android:id="@+id/tv_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_attachments"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/iv_logo1"
+                android:text="Reference_1"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_kb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_attachments"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_toStartOf="@id/iv_logo2"
+                android:text="168KB"
+                android:textColor="#A79A9A" />
+
+            <Button
+                android:id="@+id/btn_create_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo2"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:background="@drawable/rounded_button_shape1"
+                android:text="CREATE TASK" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
